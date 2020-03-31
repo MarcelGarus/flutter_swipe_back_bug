@@ -1,10 +1,5 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-/// This import is a copy of Flutter's built-in `CupertinoPageRoute`, but the
-/// [_kBackGestureWidth] constant is 200 instead of 20, so the problem is more
-/// obvious. You can also use the original `CupertinoPageRoute`, but it's a bit
-/// more challenging to trigger the bug.
-import 'page_route.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,7 +10,6 @@ class MyApp extends StatelessWidget {
       title: 'Flutter swipe back bug',
       home: FirstScreen(),
     );
-    HeroController();
   }
 }
 
